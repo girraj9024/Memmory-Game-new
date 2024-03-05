@@ -2,12 +2,20 @@
     .first{
         /* display: flex; */
         flex-direction: column;
+
     }
-    .mediya{
+    .mediya {
         display: flex;
         /* flex-direction: column; */
+        padding-left: 10px;
+        margin-left: 56px;
+        margin-right: 10px;
     }
     .timer{
         position: fixed;
+        margin-top: 33px;
+    }
+    .card{
+        margin-left: 10px;
     }
 }
