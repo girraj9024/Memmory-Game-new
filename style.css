@@ -120,10 +120,12 @@ img {
   height: 30px;
   padding: 5px;
   margin: 5px;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
   right: 20px;
+  z-index: 1;
+  position: fixed;
 }
