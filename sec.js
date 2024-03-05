@@ -85,4 +85,4 @@ function countdown(seconds) {
     }, (seconds - i) * 1000);
   }
 }
-countdown(45);
+// countdown(45);
