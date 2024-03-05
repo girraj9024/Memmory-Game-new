@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card")
 let timerDiv = document.querySelector(".timer")
+let bodyman = document.querySelector("body")
 let timer = ""
 const temp = [
   "ada sharma.jpg",
@@ -74,16 +75,14 @@ cards.forEach((card) => {
 
 })
 function countdown(seconds) {
-  for (let i = seconds; i > 0; i--) {
+  for (let i = seconds; i >= 0; i--) {
     setTimeout(function () {
-      // console.log(i);
-
-      if (i === 1) {
-        alert("Time's up!");
+      timerDiv.innerHTML = i
+      if (i === 0) {
+        bodyman.style.display = "none"
+        alert("time is over")
       }
     }, (seconds - i) * 1000);
   }
 }
-
-countdown(6);
-
+countdown(45);
