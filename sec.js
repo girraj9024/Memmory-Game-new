@@ -10,12 +10,13 @@ const temp = [
   "daniel radcliffe.webp",
   "dwayne johnson.jpg",
 ];
+let Match = ""
+
 
 const actualPhotos = [...temp, ...temp]
 const already = []
 let count = ""
 const openPhoto = []
-
 
 for (let i = 0; i < actualPhotos.length; i++) {
   const img = document.createElement("img")
@@ -52,6 +53,8 @@ cards.forEach((card) => {
       if (count > 1) {
         if (openPhoto[0].src === openPhoto[1].src) {
           console.log("Match");
+          console.log(Match);
+          Match++
 
           //reset open photo counter, empty store
 
@@ -81,6 +84,10 @@ function countdown(seconds) {
       if (i === 0) {
         bodyman.style.display = "none"
         alert("time is over")
+      }
+      if (Match == 6) {
+        bodyman.style.display = "none"
+        // alert("girads")
       }
     }, (seconds - i) * 1000);
   }
