@@ -63,6 +63,7 @@
   height: 300px;
   perspective: 1000px;
   margin: 20px;
+  margin-left: 90px;
 }
 
 .front,
@@ -100,7 +101,12 @@
 .first {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+}
+.mediya{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
